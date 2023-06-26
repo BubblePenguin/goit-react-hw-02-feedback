@@ -4,8 +4,6 @@ import { Statistics } from './Statistics';
 class Feedback extends Component {
   static defaultProps = {};
 
-  static propTypes = {};
-
   state = { good: 0, mid: 0, bad: 0 };
 
   onLeaveFeedback = e => {
@@ -14,9 +12,9 @@ class Feedback extends Component {
       [name]: ps[name] + 1,
     }));
 
-    console.log(this.state);
-    console.log(this.countTotalFeedback());
-    console.log(this.countPositiveFeedbackPercentage());
+    // console.log(this.state);
+    // console.log(this.countTotalFeedback());
+    // console.log(this.countPositiveFeedbackPercentage());
   };
 
   countTotalFeedback(ps = this.state) {

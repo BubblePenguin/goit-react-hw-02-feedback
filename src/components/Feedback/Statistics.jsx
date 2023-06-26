@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 export const Statistics = ({ good, mid, bad, total, positivePercentage }) => {
   return (
     <div>
@@ -20,4 +21,12 @@ export const Statistics = ({ good, mid, bad, total, positivePercentage }) => {
 
 const Notification = ({ message = 'There is no feedback' }) => {
   return <p>{message}</p>;
+};
+
+Statistics.propTypes = {
+  good: PropTypes.number,
+  mid: PropTypes.number,
+  bad: PropTypes.number,
+  total: PropTypes.number,
+  positivePercentage: PropTypes.string,
 };

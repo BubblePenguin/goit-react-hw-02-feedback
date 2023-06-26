@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 export const Buttons = ({ options, onLeaveFeedback }) => {
   return (
     <div>
@@ -21,4 +22,9 @@ export const Buttons = ({ options, onLeaveFeedback }) => {
       </div>
     </div>
   );
+};
+
+Buttons.propTypes = {
+  options: PropTypes.array,
+  onLeaveFeedback: PropTypes.func,
 };
